@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Meghana" content="width=device-width, initial-scale=1.0">
+    <title>Meghana - Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #701e67, #a3a811);
+            color: #e4e42d;
+            margin: 0;
+            padding: 0;
+        }
+
+        .student-header {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e4e42d;
+        }
+
+/* Typing effect */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 1.5em;
+    border-right: 0.15em solid #e4e42d; /* Cursor effect */
+    animation: typing 3.5s steps(30, end), hide-caret 0s linear 3.5s forwards;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Hide the cursor at the end */
+@keyframes hide-caret {
+    to { border-color: transparent; }
+}
+        .profile {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+          
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 3px solid #fff;
+        }
+
+        .bio, .skills, .projects, .contact, .resume {
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .skills ul, .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .student-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        .resume a {
+            color: #fff;
+            background-color: #1e90ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .resume a:hover {
+            background-color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <header class="student-header">
+            <h1><span class="typing-effect">Hi 👋🏻 I am Meghana</span></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sinchana.html">Sinchana.M</a></li>
+                <li><a href="sagar.html">Sagar G</a></li>
+            </ul>
+        </nav>
+
+
+    <main>
+        <section class="profile container">
+            <img src="images/image1.jpg" alt="Meghana" class="profile-img">
+            <div>
+                <div class="bio">
+                    <h2>Personal Information</h2>
+                    <p><strong>Name:</strong> Meghana</p>
+                    <p><strong>Age:</strong> 20</p>
+                    <p><strong>Gender:</strong> Female</p>
+                    <p><strong>Phone number:</strong> 8861966249</p>
+                    <p><strong>Languages Known:</strong> English, Kannada, Hindi</p>
+                    <p><strong>Hobbies:</strong> Painting, Blogging, App Development</p>
+                </div>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Mobile App Development</li>
+                        <li>Kotlin</li>
+                        <li>Flutter</li>
+                        <li>React Native</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <p>Worked as a mobile app developer intern at Unico Connect, focusing on Android development.</p>
+                </div>
+
+                <div class="projects">
+                    <h2>Project Details</h2>
+                    <img src="images/project2.png" alt="Project 2" class="project-img">
+                    <p><strong>Project 2:</strong> Created a mobile application for tracking fitness goals, using Flutter.</p>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:meghana@gmail.com">mmeghanadinesh@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/meghana" target="_blank">linkedin.com/in/meghana</a></p>
+                </div>
+
+                <div class="resume">
+                    <h2>Download Resume</h2>
+                    <!-- This button will download a basic text resume -->
+                    <p><a href="files/Meghana_Resume.pdf" download="Meghana_Resume">Click here to download my resume</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meghana</p>
+    </footer>
+</body>
+</html>

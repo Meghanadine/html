@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg,  #760739, #391777, #3d0220);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            color: #333;
+        }
+
+        /* Keyframe Animation for Moving Background */
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: rgba((255, 255, 255, 0.1)); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the Profiles List */
+        ul.profiles {
+            list-style-type: none;
+            padding: 0;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        ul.profiles li {
+            background-color: #fefbfb;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        ul.profiles li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        ul.profiles a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 26px;
+            display: block;
+            padding: 18px;
+            background-color: #f8fbf8;
+            color: rgb(16, 15, 15);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul.profiles a:hover {
+            background-color: #f4f7f4;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ul.profiles li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Student Profiles</h1>
+</header>
+
+<ul class="profiles">
+    <li><a href="sinchana.html">Sinchana.M</a></li>
+    <li><a href="meghana.html">Meghana</a></li>
+    <li><a href="sagar.html">Sagar.G</a></li>
+</ul>
+
+<footer>
+    <p>&copy; 2024 Student Profiles</p>
+</footer>
+
+</body>
+</html>
